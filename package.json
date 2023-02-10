@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "dataview",
   "version": "0.1.0",
   "private": true,
@@ -23,13 +22,3 @@
     "last 2 versions",
     "not dead"
   ]
-=======
-  "name": "demo-repo",
-  "version": "0.2.0",
-  "description": "A sample package.json",
-  "dependencies": {
-    "@primer/css": "17.0.1"
-  },
-  "license": "MIT"
->>>>>>> d2fc1ca098f92017638845bd799a407fb696d2c0
-}
