@@ -1,23 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import getall from '../views/getall.vue'
+import Topbanana from '../views/Topbanana.vue'
 
 Vue.use(VueRouter)
+//const game = require('../../public/game.html')
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+	children:[
+		{
+			path:'/Topbanana',
+			name:'可视化',
+			component:Topbanana
+		},
+		{
+			path:'/getall',
+			name:'李碧拓的可视化',
+			component:getall
+		}
+	]
   },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
 ]
 
 const router = new VueRouter({
