@@ -15,15 +15,14 @@
 			</div>
 			<!-- 图片文章概述 -->
 			<div class="carousel-item carousel-item--1">
-				<canvas class="carousel-item_image"></canvas>
+				<div class="carousel-item_image">
+					<canvas id="radar-view" width="422.375" height="300"></canvas>
+				</div>
 				<div class="carousel-item_info">
 					<div class="carousel-item_cantainer">
-						<h2 class="carousel-item_subtitle">Dixie National Forest</h2>
-						<h1 class="carousel-item_title">迪克西国家森林公园</h1>
 						<p class="carousel-item_description">
-							位于犹他州的南部，是从锡安公园走Highway89公路前往布莱斯峡谷的必经之路，占地将近200万英亩，横跨犹他州南部约170英里以及更广泛的地区，是大盆地和科罗拉多河之间的鸿沟。
-						</p>
-						<a href="#" class="carousel-item_btn">阅读文章</a>
+							疫情期间，我们大部分时间是在家里度过的，那么，我们最应该做的事情是什么呢？利用疫情期间这段时间，静下心来好好想一想自己的职业规划，我们的生活一年又一年都在繁忙中度过，我相信大家今年应该是在家待时间最长的一年吧，奋斗好几年了，趁着这段时间回顾一下自己成绩，分析一下未来的发展趋势，为自己今后的的职业生涯做好规划，右边是我们统计的，在疫情期间大家的时间占比。
+							</p>
 					</div>
 				</div>
 			</div>
@@ -32,13 +31,14 @@
 				<div class="carousel-item_image"></div>
 				<div class="carousel-item_info">
 					<div class="carousel-item_container">
-						<h2 class="carousel-item_subtitle">Bernina Alps</h2>
-						<h1 class="carousel-item_title">伯尔尼纳山</h1>
-						<p class="carousel-item_description">瑞士东部沿著意大利边境伸展的雷蒂亚阿尔卑斯山脉(Rhaetian
-							Alps)的一部分，景色秀丽，伯尔尼纳峰高达4,049公尺(13,284尺)。</p>
+						<h2 class="carousel-item_subtitle"><aboutView></aboutView></h2>
+						<h1 class="carousel-item_title">拉普兰</h1>
+						<p class="carousel-item_description">
+							拉普兰地处芬兰最北部。这是一片充满魔幻魅力的北极地带，各种反差十分强烈。事实上，拉普兰地区的主要魅力之一就是强烈的反差：从24小时日照不断的温暖夏季，到北极光辉映下的黑暗冬日。</p>
 						<a href="#" class="carousel-item_btn">阅读文章</a>
 					</div>
 				</div>
+				
 			</div>
 
 			<div class="carousel-item carousel-item--3">
@@ -55,14 +55,12 @@
 			</div>
 
 			<div class="carousel-item carousel-item--4">
-				<div class="carousel-item_image"></div>
+				<div class="carousel-item_image"><libituo></libituo></div>
 				<div class="carousel-item_info">
-					<div class="carousel-item_container">
-						<h2 class="carousel-item_subtitle">Palawan island</h2>
-						<h1 class="carousel-item_title">巴拉望岛</h1>
+					<div class="carousel-item_cantainer">
 						<p class="carousel-item_description">
-							巴拉望岛是菲律宾西部岛屿，地势狭长，面积1.1785万平方公里，人口31.1548万，巴拉望岛和周围数千个小岛仍是原始的自然生态，因此被称为“海上的乌托邦”。</p>
-						<a href="#" class="carousel-item_btn">阅读文章</a>
+							疫情期间，我们大部分时间是在家里度过的，那么，我们最应该做的事情是什么呢？利用疫情期间这段时间，静下心来好好想一想自己的职业规划，我们的生活一年又一年都在繁忙中度过，我相信大家今年应该是在家待时间最长的一年吧，奋斗好几年了，趁着这段时间回顾一下自己成绩，分析一下未来的发展趋势，为自己今后的的职业生涯做好规划，右边是我们统计的，在疫情期间大家的时间占比。
+							</p>
 					</div>
 				</div>
 			</div>
@@ -84,8 +82,14 @@
 </template>
 
 <script>
+	import aboutView from './AboutView.vue'
+	import libituo from '../components/libituo.vue'
 	export default {
 		name: 'Topbanana',
+		components: {
+			aboutView,
+			libituo
+		},
 		data() {
 			return {
 				carouselitem: [],
@@ -132,11 +136,17 @@
 </script>
 
 <style>
+	#radar-view{
+		position: absolute;
+		left: 20%;
+		top: 16%;
+	}
 
-.dd{
-	width: 100%;
-	position: relative;
-}
+	.dd {
+		width: 100%;
+		position: relative;
+	}
+
 	.carousel {
 		width: 100%;
 		height: 100%;
@@ -148,6 +158,7 @@
 		top: 29%;
 		left: 4%;
 	}
+
 	.carousel-item {
 		visibility: visible;
 		display: flex;
