@@ -66,14 +66,13 @@
 			</div>
 
 			<div class="carousel-item carousel-item--5">
-				<div class="carousel-item_image"></div>
+				<div class="carousel-item_image"><wujiaoya></wujiaoya></div>
 				<div class="carousel-item_info">
 					<div class="carousel-item_container">
-						<h2 class="carousel-item_subtitle">Grand Bazaar, Tehran</h2>
-						<h1 class="carousel-item_title">德黑兰大市集</h1>
-						<p class="carousel-item_description">德黑兰大市集是当地最大的市集, 货品包罗万有, 如果慢慢逛, 应该可以流年数小时, 但需要留意市集内很容易迷路,
-							价格比其他伊朗城市高，特别是一些纪念品。</p>
-						<a href="#" class="carousel-item_btn">阅读文章</a>
+						<h2 class="carousel-item_subtitle">按照地理位置统计新冠疫情人数</h2>
+						<h1 class="carousel-item_title">饼图</h1>
+						<p class="carousel-item_description">该数据主要是根据中国地区的地理位置统计的感染人数，并绘制成饼图，我们从图中可以直观地感受到，华南和华东地区感染人数较多，并结合实际情况，造成这样的原因主要在于华南和华东地区经济较发达，流动人口较多，感染风险也较大</p>
+						<a href="#" class="carousel-item_btn"></a>
 					</div>
 				</div>
 			</div>
@@ -84,11 +83,14 @@
 <script>
 	import aboutView from './AboutView.vue'
 	import libituo from '../components/libituo.vue'
+	import wujiaoya from '../components/wujiaoya.vue'
+
 	export default {
 		name: 'Topbanana',
 		components: {
 			aboutView,
-			libituo
+			libituo,
+			wujiaoya
 		},
 		data() {
 			return {
@@ -172,7 +174,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		background-color: #2C2C2C;
+		background-color: #fff;
 		margin: auto;
 		padding: 0 40px;
 		width: 40%;
