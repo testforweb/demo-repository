@@ -7,34 +7,48 @@
 				</div>
 			</div>
 		</div>
-		<div style="position: absolute;top: 700px;">
-			<h1 style="padding-left: 600px;">小组介绍</h1>
-			<ul style="display: flex;justify-content: center;">
-				<li style="padding-left: 50px;">
-					<h2>李碧拓</h2>
-					<h3>sdasd</h3><img src="../assets/images/li.jpg" alt="">
-				</li>
-				<li>
-					<h2>方威威</h2>
-					<h3>sdasd</h3><img src="../assets/images/fang.jpg" alt="">
-				</li>
-				<li>
-					<h2>吴娇雅</h2>
-					<h3>sdasd</h3><img src="../assets/images/wu.jpg" alt="">
-				</li>
-				<li>
-					<h2>吴志浩</h2>
-					<h3>sdasd</h3><img src="../assets/images/wu2.jpg" alt="">
-				</li>
-				<li>
-					<h2>刘子璐</h2>
-					<h3>sdasd</h3><img src="../assets/images/liu.jpg" alt="">
-				</li>
-				<li>
-					<h2>谭凯</h2>
-					<h3>sdasd</h3><img src="../assets/images/tan.jpg" alt="">
-				</li>
-			</ul>
+		<div>
+			<h1 class="title">小组介绍</h1>
+			<div class="members">
+				<div>
+					<div>
+						<h3>李碧拓</h3>
+						<p>sdasd</p>
+					</div>
+					<img src="../assets/images/li.jpg" alt="">
+				</div>
+				<div>
+					<div>
+						<h3>方威威</h3>
+						<p>sdasd</p>
+					</div>
+					<img src="../assets/images/fang.jpg" alt="">
+				</div>
+				<div>
+					<div>
+						<h3>吴娇雅</h3>
+						<p>sdasd</p>
+					</div><img src="../assets/images/wu.jpg" alt="">
+				</div>
+				<div>
+					<div>
+						<h3>吴志浩</h3>
+						<p>sdasd</p>
+					</div><img src="../assets/images/wu2.jpg" alt="">
+				</div>
+				<div>
+					<div>
+						<h3>刘子璐</h3>
+						<p>sdasd</p>
+					</div><img src="../assets/images/liu.jpg" alt="">
+				</div>
+				<div>
+					<div>
+						<h3>谭凯</h3>
+						<p>sdasd</p>
+					</div><img src="../assets/images/tan.jpg" alt="">
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -49,21 +63,48 @@
 			}
 		},
 		mounted() {
-			
+
 		},
 	}
 </script>
+
 <style>
-	li {
-		list-style-type: none;
-		margin-top: 30px;
-		flex: auto;
-		width: 200px;
+	.title {
 		text-align: center;
 	}
 
-	h3 {
-		margin-top: 10px;
+	.members {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 2em auto;
+		max-width: 1200px;
+	}
+
+	.members>div {
+		display: flex;
+		margin: 1em;
+		background: #fff;
+		box-shadow: 0 0 2em rgba(100, 130, 150, 0.2);
+		overflow: hidden;
+		border-radius: 1em;
+		transition: transform .4s;
+	}
+
+	.members>div>div {
+		width: 12em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.members>div:hover {
+		transform: scale(1.05);
+	}
+
+	.members p{
+		opacity: .6;
 	}
 
 	img {
@@ -72,46 +113,27 @@
 	}
 
 	.parent {
-
-		width: 681px;
-		height: 384px;
-		top: 20%;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto auto;
+		margin: 2em auto 4em;
+		width: 85vw;
+		max-width: 720px;
+		border-radius: 1em;
 		overflow: hidden;
-		position: absolute;
-		border-radius: 16px;
-		-webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-		box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+		box-shadow: 0 0 2em rgba(100, 130, 150, 0.8);
 	}
-	.slide1 {
-		background-image: url("https://source.unsplash.com/a93v3R8nu-c");
-	}
+
 	.slider {
-		position: absolute;
-		width: 400%;
-		height: 100%;
-		background: #000;
-		display: inline-flex;
-		overflow: hidden;
-	}
-
-	.slide1{
-		position: absolute;
+		background-image: url("https://source.unsplash.com/a93v3R8nu-c");
 		background-position: center;
 		background-size: cover;
-		color: #fff;
-		font-size: 20px;
-		padding-top: 138px;
-		font-weight: 800;
-		font-family: "Heebo", sans-serif;
-		text-align: center;
-		width: 25%;
-		height: 100%;
-		z-index: 10;
+		overflow: hidden;
 		transition: 1.4s;
+	}
+
+	.slide1 {
+		background: rgba(60, 80, 100, 0.6);
+		padding: 2em;
+		color: #fff;
+		font-size: 1.3em;
+		text-align: center;
 	}
 </style>

@@ -180,7 +180,7 @@
 	}
 
 	.carousel-item_image {
-		background-color: aqua;
+		/* background-color: aqua; */
 		width: 60%;
 		height: 100%;
 		order: 2;
@@ -192,7 +192,6 @@
 	}
 
 	.carousel-item_subtitle {
-		font-family: 'Open Sans', sans-serif;
 		letter-spacing: 3px;
 		font-size: 10px;
 		text-transform: uppercase;
@@ -256,7 +255,7 @@
 		width: 100px;
 		height: 40px;
 		z-index: 2;
-		background-color: cyan;
+		/* background-color: cyan; */
 		bottom: 0;
 	}
 
