@@ -20,7 +20,7 @@
 				<div>
 					<div>
 						<h3>方威威</h3>
-						<p>sdasd</p>
+						<p>热爱生活，相信自己，决定了就去做，管它结果如何</p>
 					</div>
 					<img src="../assets/images/fang.jpg" alt="">
 				</div>
