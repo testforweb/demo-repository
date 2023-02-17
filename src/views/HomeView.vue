@@ -49,10 +49,16 @@
 				<img src="../assets/images/bilibili-spring-view-11.png" data-move-multiple="0.546">
 			</div>
 			<canvas ref="canvas" id="canvas" width="1920" height="100"></canvas>
+			<div class="banner-cover">
+				<div class="banner-badge">[200200] HTTP OKOK 队伍</div>
+				<div class="banner-title">复苏此刻，蓦然回首</div>
+				<div class="banner-nav">
+					<router-link to='/getall'>主页</router-link>
+					<router-link to='/Topbanana'>展示</router-link>
+					<a @click="togame">游戏</a>
+				</div>
+			</div>
 		</header>
-		<router-link class="navv" to='/getall'>主页</router-link>
-		<router-link class="navv" to='/Topbanana'>展示</router-link>
-		<a class="navv" @click="togame">游戏</a>
 		<main>
 			<router-view></router-view>
 		</main>
@@ -153,7 +159,9 @@
 		},
 		methods: {
 			togame(){
-				window.location.href="http://localhost:8080/game.html"
+				// window.location.href="http://localhost:8080/game.html"
+				// * Deeply shocked.
+				window.location.href="/game.html"
 			},
 			getTranslateVal(str) {
 				let s = 'translate',
@@ -246,12 +254,6 @@
 	}
 </script>
 <style scoped>
-	html,
-	body {
-		margin: 0;
-		height: 1000px;
-	}
-
 	/* 设置页眉部分 */
 	header {
 		height: 180px;
@@ -388,15 +390,66 @@
 		top: 0;
 		left: 0;
 	}
-	.navv{
-		padding-left: 5px;
-		display: block;
-		width: 60px;
-		font-size: 20px;
-		text-decoration: none;
-		background-color: aqua;
+
+	.banner-cover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 	}
-	.navv:hover{
-		background-color: rebeccapurple;
+
+	.banner-badge {
+		/* margin: 0 auto; */
+		width: fit-content;
+		padding: .2em 1em;
+		background: rgba(255, 255, 255, .5);
+		border-radius: 0 0 1em 1em;
+		backdrop-filter: blur(1em);
+		border: 1px solid #ddd;
+	}
+
+	@font-face {
+		font-family: "东方大楷";
+		font-weight: bold;
+		src: url("../assets/DFDK.woff") format("woff");
+		font-display: swap;
+	}
+	.banner-title {
+		/* margin: 1.2em auto; */
+		width: fit-content;
+		font-size: 2em;
+		font-weight: bold;
+		font-family: "东方大楷", sans-serif;
+		color: #fff;
+		text-shadow: 0 0 .1em rgba(0,0,0,.5),2px 4px .5em rgba(0,0,0,.5);
+	}
+
+	.banner-nav {
+		margin-bottom: 1em;
+		background: rgba(255, 255, 255, .9);
+		border-radius: .5em;
+		backdrop-filter: blur(1em);
+		display: flex;
+		border: 1px solid #ddd;
+		color: #444;
+		overflow: hidden;
+	}
+	
+	.banner-nav>*{
+		padding: .5em 2em;
+		cursor: pointer;
+		text-decoration: none;
+		color: inherit;
+		transition: background .2s;
+	}
+
+	.banner-nav>*:hover {
+		color: #fff;
+		background: rgba(77, 196, 164, 0.95);
 	}
 </style>

@@ -42,14 +42,14 @@
 			</div>
 
 			<div class="carousel-item carousel-item--3">
-				<div class="carousel-item_image"></div>
+				<div class="carousel-item_image"><Wuzhihao></Wuzhihao></div>
 				<div class="carousel-item_info">
 					<div class="carousel-item_container">
-						<h2 class="carousel-item_subtitle">Lappland</h2>
-						<h1 class="carousel-item_title">拉普兰</h1>
+						<h2 class="carousel-item_subtitle">不同年龄人群的新冠痊愈时间</h2>
+						<h1 class="carousel-item_title">散点图</h1>
 						<p class="carousel-item_description">
-							拉普兰地处芬兰最北部。这是一片充满魔幻魅力的北极地带，各种反差十分强烈。事实上，拉普兰地区的主要魅力之一就是强烈的反差：从24小时日照不断的温暖夏季，到北极光辉映下的黑暗冬日。</p>
-						<a href="#" class="carousel-item_btn">阅读文章</a>
+						  我们调查了人群中新冠的痊愈时间与年龄的关系，绘制成散点图。从图中的数据可以看出，平均痊愈时间是 7.4 天，儿童的痊愈时间较长，而青年以后随着年龄的增长，痊愈时间也是更长的。
+						</p>
 					</div>
 				</div>
 			</div>
@@ -84,13 +84,15 @@
 	import aboutView from './AboutView.vue'
 	import libituo from '../components/libituo.vue'
 	import wujiaoya from '../components/wujiaoya.vue'
+	import Wuzhihao from '../components/Wuzhihao.vue'
 
 	export default {
 		name: 'Topbanana',
 		components: {
 			aboutView,
 			libituo,
-			wujiaoya
+			wujiaoya,
+			Wuzhihao
 		},
 		data() {
 			return {
@@ -182,7 +184,7 @@
 	}
 
 	.carousel-item_image {
-		background-color: aqua;
+		/* background-color: aqua; */
 		width: 60%;
 		height: 100%;
 		order: 2;
@@ -194,7 +196,6 @@
 	}
 
 	.carousel-item_subtitle {
-		font-family: 'Open Sans', sans-serif;
 		letter-spacing: 3px;
 		font-size: 10px;
 		text-transform: uppercase;
@@ -258,7 +259,7 @@
 		width: 100px;
 		height: 40px;
 		z-index: 2;
-		background-color: cyan;
+		/* background-color: cyan; */
 		bottom: 0;
 	}
 
