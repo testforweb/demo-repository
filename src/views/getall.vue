@@ -13,39 +13,33 @@
 				<div>
 					<div>
 						<h3>李碧拓</h3>
-						<p>sdasd</p>
 					</div>
 					<img src="../assets/images/li.jpg" alt="">
 				</div>
 				<div>
 					<div>
 						<h3>方威威</h3>
-						<p>sdasd</p>
 					</div>
 					<img src="../assets/images/fang.jpg" alt="">
 				</div>
 				<div>
 					<div>
 						<h3>吴娇雅</h3>
-						<p>sdasd</p>
 					</div><img src="../assets/images/wu.jpg" alt="">
 				</div>
 				<div>
 					<div>
 						<h3>吴志浩</h3>
-						<p>sdasd</p>
 					</div><img src="../assets/images/wu2.jpg" alt="">
 				</div>
 				<div>
 					<div>
 						<h3>刘子璐</h3>
-						<p>sdasd</p>
 					</div><img src="../assets/images/liu.jpg" alt="">
 				</div>
 				<div>
 					<div>
 						<h3>谭凯</h3>
-						<p>sdasd</p>
 					</div><img src="../assets/images/tan.jpg" alt="">
 				</div>
 			</div>
@@ -122,7 +116,7 @@
 	}
 
 	.slider {
-		background-image: url("https://source.unsplash.com/a93v3R8nu-c");
+		background-image: url('../../public/images1/VCG41N1370730955.jpg');
 		background-position: center;
 		background-size: cover;
 		overflow: hidden;

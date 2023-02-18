@@ -54,7 +54,7 @@
 				<div class="banner-title">复苏此刻，蓦然回首</div>
 				<div class="banner-nav">
 					<router-link to='/getall'>主页</router-link>
-					<router-link to='/Topbanana'>展示</router-link>
+					<router-link to='/show'>展示</router-link>
 					<a @click="togame">游戏</a>
 				</div>
 			</div>
@@ -67,17 +67,11 @@
 
 <script>
 	// @ is an alias to /src
-	import HelloWorld from '@/components/HelloWorld.vue'
-	import libituo from '../components/libituo.vue'
 	export default {
 		name: 'HomeView',
-		components: {
-			HelloWorld,
-			libituo
-		},
 		data() {
 			return {
-				tagname:'Topbanana',
+				tagname:'show',
 				sideData: SideData.sideData,
 				intX: 0,
 				x: Math.random() * 1920,
