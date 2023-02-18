@@ -10,22 +10,22 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-	redirect:'/getall',
+    redirect: '/getall',
     name: 'home',
     component: HomeView,
-	children:[
-		{
-			path:'/Topbanana',
-			name:'可视化',
-			component:Topbanana
-		},
-		{
-			path:'/getall',
-			name:'李碧拓的可视化',
-			component:getall
-		}
-	]
-  },
+    children: [
+      {
+        path: '/Topbanana',
+        name: '可视化',
+        component: Topbanana
+      },
+      {
+        path: '/getall',
+        name: '李碧拓的可视化',
+        component: getall
+      }
+    ]
+  }
 ]
 
 const router = new VueRouter({

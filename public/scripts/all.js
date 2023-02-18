@@ -3753,7 +3753,7 @@ define("scripts/object/background.js", function(exports){
 	var random = Ucren.randomNumber;
 	
 	exports.set = function(){
-		image = layer.createImage( "default", "images1/background2.jpg", 0, 0, 640, 480 );
+		image = layer.createImage( "default", "images1/covid-ge50481143_1280.jpg", 0, 0, 640, 480 );
 	};
 	
 	exports.wobble = function(){
