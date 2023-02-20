@@ -3,7 +3,7 @@
     <div class="parent">
       <div class="slider">
         <div id="slide1" class="slide1 up1">
-          新冠病毒的大流行，使得全球经济陷入1929年大萧条以来最严重的衰退。尽管中国封城措施在新冠疫情初期遭到部分外国舆论的抨击，但是意大利、英国、日本等多个发达国家都在疫情恶化后采取了封城甚至关闭国境的措施。
+          新冠病毒的大流行，使得全球经济陷入1929年大萧条以来最严重的衰退。我们的生活和工作都受到了极大的影响，为了能够更直观地了解此次疫情对人们生活的影响，我们小组针对疫情期间的一些数据进行了调查和可视化。
         </div>
       </div>
     </div>
@@ -13,7 +13,7 @@
         <div>
           <div>
             <h3>李碧拓</h3>
-            <p>sdasd</p>
+            <p>组长</p>
           </div>
           <img src="../assets/images/li.jpg" alt="" />
         </div>
@@ -34,21 +34,18 @@
         <div>
           <div>
             <h3>吴志浩</h3>
-            <p>sdasd</p>
           </div>
           <img src="../assets/images/wu2.jpg" alt="" />
         </div>
         <div>
           <div>
             <h3>刘子璐</h3>
-            <p>sdasd</p>
           </div>
           <img src="../assets/images/liu.jpg" alt="" />
         </div>
         <div>
           <div>
             <h3>谭凯</h3>
-            <p>sdasd</p>
           </div>
           <img src="../assets/images/tan.jpg" alt="" />
         </div>

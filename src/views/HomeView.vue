@@ -68,12 +68,10 @@
 <script>
 	// @ is an alias to /src
 	import HelloWorld from '@/components/HelloWorld.vue'
-	import libituo from '../components/libituo.vue'
 	export default {
 		name: 'HomeView',
 		components: {
 			HelloWorld,
-			libituo
 		},
 		data() {
 			return {

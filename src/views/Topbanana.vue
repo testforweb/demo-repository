@@ -28,25 +28,27 @@
             <h2 class="carousel-item_subtitle">[200200] HTTP OKOK 队伍</h2>
             <h1 class="carousel-item_title">概述</h1>
             <p class="carousel-item_description">
-              疫情期间，我们大部分时间是在家里度过的，那么，我们最应该做的事情是什么呢？利用疫情期间这段时间，静下心来好好想一想自己的职业规划，我们的生活一年又一年都在繁忙中度过，我相信大家今年应该是在家待时间最长的一年吧，奋斗好几年了，趁着这段时间回顾一下自己成绩，分析一下未来的发展趋势，为自己今后的的职业生涯做好规划，右边是我们统计的，在疫情期间大家的时间占比。
-            </p>
+              数据可视化，是指数据通过与地图、热力图、散点图等多种图表形式结合，在特定的数字场景中，让观众对问题有直观的视觉思维。那么下面是我们组成员实现的可视化效果。
+			  
+			  </p>
           </div>
         </div>
       </div>
 
-      <!-- <div class="carousel-item carousel-item--2">
-        <div class="carousel-item_image"></div>
+      <div class="carousel-item carousel-item--2">
+        <div class="carousel-item_image"><tankai></tankai></div>
         <div class="carousel-item_info">
           <div class="carousel-item_container">
-            <h2 class="carousel-item_subtitle"><aboutView></aboutView></h2>
-            <h1 class="carousel-item_title">拉普兰</h1>
+            <h2 class="carousel-item_subtitle">春节疫情期间办公类app每日下载量趋势</h2>
+            <h1 class="carousel-item_title">战疫总动员：八亿中国人如何做到居家隔离</h1>
             <p class="carousel-item_description">
-              拉普兰地处芬兰最北部。这是一片充满魔幻魅力的北极地带，各种反差十分强烈。事实上，拉普兰地区的主要魅力之一就是强烈的反差：从24小时日照不断的温暖夏季，到北极光辉映下的黑暗冬日。
-            </p>
-            <a href="#" class="carousel-item_btn">阅读文章</a>
+              春节伊始，万家团圆，随着各地企业工厂陆续复工大量企业通过线上平台进行远程“云办公”，办公类APP用户规模及时长均有不同程度的增长。之后，各地中小学开始上课，下载量再次达到一个小高峰。
+              云办公、云学习、互联网改变了人们疫情期间的生活方式，有些网友适应了远程办公的节奏
+              一场疫情，人们将线下的生活搬到了线上。互联网给人们带来了新的体验，为未来生活提供了更多的可能性，也给“战疫”提供更多保障。
+			  </p>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <div class="carousel-item carousel-item--3">
         <div class="carousel-item_image"><Wuzhihao></Wuzhihao></div>
@@ -67,6 +69,8 @@
         <div class="carousel-item_image"><libituo></libituo></div>
         <div class="carousel-item_info">
           <div class="carousel-item_cantainer">
+			  <h2 class="carousel-item_subtitle">疫情期间时间占比</h2>
+			  <h1 class="carousel-item_title">雷达图</h1>
             <p class="carousel-item_description">
               疫情期间，我们大部分时间是在家里度过的，那么，我们最应该做的事情是什么呢？利用疫情期间这段时间，静下心来好好想一想自己的职业规划，我们的生活一年又一年都在繁忙中度过，我相信大家今年应该是在家待时间最长的一年吧，奋斗好几年了，趁着这段时间回顾一下自己成绩，分析一下未来的发展趋势，为自己今后的的职业生涯做好规划，右边是我们统计的，在疫情期间大家的时间占比。
             </p>
@@ -106,11 +110,12 @@
 
 <script>
 import aboutView from './AboutView.vue'
-import libituo from '../components/libituo.vue'
+import libituo from '../components/Libituo.vue'
 import wujiaoya from '../components/wujiaoya.vue'
 import Wuzhihao from '../components/Wuzhihao.vue'
 import fangweiwei from '../components/fangweiwei.vue'
 import drawmap from '@/components/drawMap.vue'
+import tankai from '../components/tankai.vue'
 
 export default {
   name: 'Topbanana',
@@ -120,7 +125,8 @@ export default {
     wujiaoya,
     Wuzhihao,
     fangweiwei,
-    drawmap
+    drawmap,
+	tankai
   },
   data() {
     return {
@@ -187,7 +193,7 @@ export default {
   overflow: hidden;
   position: absolute;
   top: 29%;
-  left: 20%;
+  left: 10%;
 }
 
 .carousel-item {
